@@ -7,15 +7,24 @@ I hope this program helps some of you to stay on top of your investments. :)
 
 ## Documentation
 To execute the program properly, it needs the following set-up and inputs:
-### 1. Configuration file
+### 1. Enable Google API
+If you don't already have one, create a [Google Cloud Platform](https://cloud.google.com/free/?gclid=Cj0KCQjwma6TBhDIARIsAOKuANyzD8wW-asyhsKM-_ZFMa-62VR6jXL44RlDsl70K4fE00owvLxGrXQaAmKLEALw_wcB&gclsrc=aw.ds) account and go to 'Console'.
+Click on the burger-menu in the top-left corner and navigate to 'APIs & Services' > 'Library', search for and enable 'Google Sheets API'.
+
+Then, go to to 'APIs & Services' > 'Credentials', click on '+ CREATE CREDENTIALS' and select 'Service Account'. Give it any service account name (something like 'Google_Sheet_API') and hit 'CREATE AND CONTINUE'. Just skip the next two steps as they're optional.
+
+Next, click on the created service account, navigate to 'KEYS' and create a JSON key type.
+
+Finally, save the .json file on your drive.
+### 2. Configuration file
 The configuration file passes personal information to the program and has to be saved in the execution folder by the name **'Weekly_Investment_Summary.ini'**!
 
 Please fill your personal information in the template below.
 ```ini
 [Google_Sheet]
-API_filename = <File Path to Google API Authorization.json>
+API_filename = <File Path to Google API Key.json>
 gs_url = <URL to Google Sheets File>
-worksheet = <Worksheet name containing crypto data>
+worksheet = <Worksheet Name>
 
 [Price_Data]
 currency = <Currency shortcut (e.g. EUR, USD)>
@@ -26,12 +35,6 @@ send_to = <E-Mail address receiver>
 username = <E-Mail address sender>
 password = <Password to access Gmail account from sender>
 ```
-### 2. Enable Google API
-Create a Google Cloud Platform account and create a project. 
-Click on the burger-menu in the top-left corner and navigate to 'APIs & Services' > 'Library', search for and enable 'Google Sheets API'.
-
-[Link](www.google.com)
-
 ### 3. Google sheet format & sharing
 As mentionted in the introduction, the program is using data from a Google Sheet with above set-up Google API.
 
