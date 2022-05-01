@@ -49,7 +49,7 @@ Also, please use the shortcut for each asset. The program is scraping the data f
 | 2022-02-25 | ETH     | 2         |
 | 2021-09-21 | ADA     | 100       |
 | 2017-03-02 | TSLA    | 5         |
-| 2019-05-00 | GOOG    | 1         |
+| 2019-05-08 | GOOG    | 1         |
 | ...        |         |           |
 
 Furthermore, the Google Sheet has to be shared with the E-Mail address you get from the .json file, the file you got during the set-up of the Google API, under 'Client_email'. Please navigate to your Google Sheet, hit the green 'Share'-button in the top-right corner, copy the E-Mail address from the .json file, select it from the dropdown and hit the blue 'Send'-button in the bottom-right corner of the pop-up.
