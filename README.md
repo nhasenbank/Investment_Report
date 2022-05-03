@@ -1,7 +1,7 @@
-# Investment Tracker
+# Investment Report
 The investment tracker program imports, analyzes and visualizes your assets that are maintained in a Google Sheet, and sends a summary to any E-Mail address using a G-Mail account. It shows detailed information of the current value, prior week value, purchase value, all-time high and the date of the all-time high by single holding as well as for the total.
 
-Note that this currently only works for cryptocurrencies!
+**Note that this currently only works for cryptocurrencies!**
 
 I hope this program helps some of you to stay on top of your investments. :)
 
@@ -17,7 +17,7 @@ Next, click on the created service account, navigate to 'KEYS' and create a JSON
 
 Finally, save the .json file on your drive.
 ### 2. Configuration file
-The configuration file passes personal information to the program and has to be saved in the execution folder by the name **'Weekly_Investment_Summary.ini'**!
+The configuration file passes personal information to the program and has to be saved in the execution folder by the name **'Investment_Report.ini'**!
 
 Please fill your personal information in the template below.
 ```ini
@@ -32,8 +32,8 @@ metric = <Metric the assets will be valued with (High, Low, Open, Close)>
 
 [E_Mail]
 send_to = <E-Mail address receiver>
-username = <E-Mail address sender>
-password = <Password to access Gmail account from sender>
+send_from = <E-Mail address sender>
+app_password = <App-password from Step 4>
 ```
 ### 3. Google sheet format & sharing
 As mentionted in the introduction, the program is using data from a Google Sheet with above set-up Google API.
@@ -55,8 +55,13 @@ Also, please use the shortcut for each asset. The program is scraping the data f
 Furthermore, the Google Sheet has to be shared with the E-Mail address that is indicated the .json file under 'Client_email' (the file you got during the set-up of the Google API). Please go to your Google Sheet, hit the green 'Share'-button in the top-right corner, copy & paste the E-Mail address from the .json file, and hit the blue 'Send'-button in the bottom-right corner of the pop-up.
 
 ### 4. G-Mail account set-up
-You have to login to the Google account of the sender's E-Mail and go to G-Mail. Navigate to 'Manage your Google Account' by clicking on your profile picture in top-right corner. Then, go to 'Security' in the menue on the left, scroll down and activate 'Less-secure app access'.
+You have to login to the Google account of the sender's E-Mail and go to G-Mail. Navigate to 'Manage your Google Account' by clicking on your profile picture at top-right corner. Then, go to 'Security' in the menue on the left, and activate '2-Step Verification' by following the instuctions.
 
-You're all set and can execute the code.
+Next, you have to create an app-password. Go to 'App Password' under 'Signing in to Google',  select 'Other' in the dropdown and enter any name such as 'Python' for instance. Finally, hit 'GENERATE' and save the 16-character app-password without spaces. This is the password you have to put under 'app_password' int the .ini file from Step 2.
+
+Now you're all set and can execute the code.
 
 Have fun, cheers!
+
+##### Supporting Articles
+* [4. G-Mail account set-up](https://towardsdatascience.com/automate-sending-emails-with-gmail-in-python-449cc0c3c317)

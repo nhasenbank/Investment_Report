@@ -7,3 +7,4 @@ cufflinks==0.17.3
 gspread==5.2.0
 kaleido==0.2.1
 configparser==5.2.0
+yagmail==0.15.277

@@ -2,8 +2,6 @@ Plots
 assetTracker
 venv_crypto_tracker
 google_API.json
-Weekly_Investment_Summary.py
 *.py
-Weekly_Investment_Summary.ini
 *.ini
 Create_Virtual-Environment.txt
