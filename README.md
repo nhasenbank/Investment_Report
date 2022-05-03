@@ -1,7 +1,7 @@
 # Investment Tracker
 The investment tracker program imports, analyzes and visualizes your assets that are maintained in a Google Sheet, and sends a summary to any E-Mail address using a G-Mail account. It shows detailed information of the current value, prior week value, purchase value, all-time high and the date of the all-time high by single holding as well as for the total.
 
-This works for both, stocks and cryptocurrencies.
+Note that this currently only works for cryptocurrencies!
 
 I hope this program helps some of you to stay on top of your investments. :)
 
@@ -48,8 +48,8 @@ Also, please use the shortcut for each asset. The program is scraping the data f
 | 2021-12-24 | BTC     | 0.5       |
 | 2022-02-25 | ETH     | 2         |
 | 2021-09-21 | ADA     | 100       |
-| 2017-03-02 | TSLA    | 5         |
-| 2019-05-08 | GOOG    | 1         |
+| 2017-03-02 | QNT     | 5         |
+| 2019-05-08 | BTC     | 1         |
 | ...        |         |           |
 
 Furthermore, the Google Sheet has to be shared with the E-Mail address that is indicated the .json file under 'Client_email' (the file you got during the set-up of the Google API). Please go to your Google Sheet, hit the green 'Share'-button in the top-right corner, copy & paste the E-Mail address from the .json file, and hit the blue 'Send'-button in the bottom-right corner of the pop-up.
