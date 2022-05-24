@@ -8,5 +8,5 @@
 # │ │ │ │ │
 # * * * * * <command to execute>
 # 0 15 * * 0
-5 14 * * 1 $RUNSCRIPT
+5 14 * * * $RUNSCRIPT
 #This file has to end with an empty line!
